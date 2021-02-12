@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="Simon_code.js"></script>
+        <link rel="stylesheet" href="Simon_style.css">
+        <link rel="icon" type="image/x-icon" href="RETROWAVE.png"/>
+        <title>Chill Party : Jeu du Simon</title>   
+    </head>
+    
+    <body>
+        <header>
+            <div id="sonic"><img src="tenor.gif" alt="deco"></div>
+            
+            <figure><a href="index.html"><img src="logohome.png" alt="logo home"></a></figure>
+            <h1>Chill Party</h1>
+        </header>
+            <h2 id="titre">Jeu du Simon</h2>
+
+            <div class="explications">
+                <span id="regles" class="cache">Vous verrez une suite de couleurs aléatoires s'allumer sous vos yeux que vous devrez reproduire à l'identique.<br> 
+                Une couleur supplémentaire s'ajoute à chaque fois que vous finnissez la suite avec succès. Bonne chance !</span><br>
+            </div>
+
+            <div class="intro">
+                <input id="info" type="button" value="Info" onClick="Regles()" />
+
+                <input id="start" type="button" value="START" onClick="Start()" />
+            </div>
+
+            <div class="bloc">
+                <span id="yellow" type="button" onClick="Choice('yellow')"></span>
+    
+                <span id="green" type="button" onClick="Choice('green')"></span>
+
+                <span id="blue" type="button" onClick="Choice('blue')"></span> 
+    
+                <span id="red" type="button" onClick="Choice('red')"></span>
+            </div>
+        <h3 id="lose" class="cache">Game Over!</h3>
+    </body>
+</html>

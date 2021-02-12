@@ -1,0 +1,255 @@
+@font-face {
+	font-family: "RetroWave";
+	src: url('font.ttf');
+}
+
+body{ 
+    font-family: "RetroWave",cursive;
+    /*background-color: #131519 ;*/
+    background-image: url(background.jpg);
+    background-size: contain;
+    word-spacing: 0.5em;
+    font-size: 0.85vw;
+    line-height: 1.5em;
+    color: white;
+    overflow-x: hidden;
+    
+}
+
+
+
+header>figure>a>img{
+    margin-top:0.3em ;
+    height: 3em;
+}
+
+header{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 1.2em;
+    border: 0.5px solid blue; 
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    background-color: #343a40;   
+}
+
+header>h1{
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0px;
+    margin: auto;
+} 
+
+header>figure{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+
+
+#sonic> img{
+    width: 3.2em;
+    height: 3.2em;
+    position: absolute;
+    top: 0.7em;
+    left: 0em;
+    animation-name: mvt;
+    animation-duration: 6.5s;
+    animation-iteration-count:infinite;
+    
+}
+
+@keyframes mvt {
+    0%{
+
+        transform: translate(-5vw);
+        
+    }
+    100%{
+        transform: translate(120vw);
+        
+    }
+}
+
+
+#mainsubject{
+    margin: 1em;
+    margin-top: 2.5em;
+    padding: 1em;
+    background-color: #343a40;
+    border: 0.5px solid blue;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px 0px rgba(100, 86, 86, 0.5);
+    text-shadow:0em 0.05em 0.1em rgba(0,0,0,0.77);
+    position: relative;
+    
+
+}
+
+main>a{
+    position: relative;
+    top: 4em;
+    left: 46.25%;
+    right: 50%; 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 3px solid blue;
+    border-radius: 5px;
+    box-shadow:  0px 3px 5px rgba(0,0,0,0.77);
+    background-color: #343a40;
+    color:white;
+    text-shadow:0.1em 0.1em 0.2em rgba(0,0,0,0.77);   
+    font-weight: bold; 
+    overflow: visible;  
+}
+
+main>a:active{
+    box-shadow: inset 0px 3px 5px rgba(0,0,0,0.77);
+    color: black;
+}
+
+main>a:hover    {
+    background-color: gray;
+    color: black;
+    cursor:  pointer;
+    
+}
+
+
+
+.defil{
+    animation-name:defile;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes defile{
+
+    100%{
+        transform: translate(-120vw);
+        
+    }
+}
+.defil2{
+    animation-name:defile2;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+}
+@keyframes defile2{
+    100%{
+        transform: translate(-100vw);
+    }
+}
+
+#gameselection{
+    position: relative;
+    top: -50vh;
+    right: -100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.jeux{
+    width: 18vw;
+    height: 25vh;
+    border: 3px solid blue;
+    background-color: #343a40;
+}
+
+.none{
+    display: none;
+}
+
+
+
+
+
+.back{
+    animation-name:precedent;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes precedent{
+    0%{
+        transform: translate(-120vw);
+    }
+    100%{
+        
+        transform: translate(0vw);
+        
+    }
+}
+.back2{
+    animation-name:precedent2;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+}
+@keyframes precedent2{
+    0%{
+        transform: translate(-100vw);
+    }
+    100%{
+        
+        transform: translate(0vw);
+    }
+}
+
+
+.titrejeu>img{
+    width: 15vw;
+}
+.titrejeu{
+    position: relative;
+    right: 1vw;
+}
+
+#puissancequatre>#p4tab>img{
+    width: 10vw;
+}
+
+#puissancequatre>#p4tab{
+    position: relative;
+    top: -2vh;
+    left: 1vw;
+}
+
+#simonlogo{
+    position: relative;
+    bottom: 1.5vh;
+    left: 2.3vw;
+}
+#simonlogo>img{
+    width: 8.5vw;
+}
+
+
+#mastermindlogo{
+    position: relative;
+    bottom: 2vh;
+    left: 1.5vw;
+}
+
+#mastermindlogo>img{
+    width: 10vw;
+}
+
+#justeprixlogo>img{
+    width: 13vw;
+}
+
+
+#justeprixlogo{
+    position: relative;
+    left: 0vw;
+    right: 0vw;
+    top: 0vh;
+    bottom: 0vh;
+}

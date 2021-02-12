@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html> 
+
+    <head>
+        <meta charset="utf-8">
+        <title>Chill Party</title>
+        <link rel="stylesheet" href="normalise.css">
+        <link rel="stylesheet" href="accueil.css">
+        <script type="text/javascript" src="accueil.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="RETROWAVE.png"/>
+    </head>
+
+    <body> 
+        <header>
+            <div id="sonic"><img src="tenor.gif" alt="deco"></div>
+            
+            <figure><a href="index.html"><img src="logohome.png" alt="logo home"></a></figure>
+            <h1>Chill Party</h1>
+        </header>
+
+        <main>
+            
+
+            <section id="mainsubject">
+                <span>Adrien :</span>
+                <ul>
+                    <li>Page d’accueil (Avec participation de Sanae pour le HTML)</li>
+                    <li>Puissance 4 + Mise en forme du puissance 4 (commencé à l'origine par Mina)</li>
+                    <li>Aidé Thomas et Sabrina sur le Simon dans la partie JS</li>
+                </ul>
+
+
+                <span>Sabrina :</span>
+                <ul>
+                    <li>Algorithme du jeu du Simon qui permet de sélectionner les couleurs de manière aléatoires</li>
+                    <li>Mise en place des conditions d’échecs ou de suite du jeu sur SIMON</li>
+                    <li>Mise en place du design de la page du jeu SIMON</li>
+                </ul>
+
+                <span>Thomas :</span>
+                <ul>
+                    <li>Écriture de l’algorithme du jeu du Simon avec Sabrina</li>
+                    <li>Création système de clignotement (Aide de la part d’Adrien) sur le jeu du SIMON</li>
+                    <li>Création du bouton Info et Start sur le SIMON</li>
+                </ul>
+
+                <span>Mina :</span>
+                <ul>
+                    <li>Affichage des joueurs dans puissance 4 et  tentative de faire l’animation du puissance 4 + Début de la mise en forme du puissance 4</li>
+                    <li>Juste prix (HTML, CSS, JS)</li>
+                    <li>Début de la page d’accueil + Animation du Sonic de la page d’accueil </li>
+                </ul>
+
+                <span>Nicolas :</span>
+                <ul>
+                    <li>Mastermind (html, css, JS)</li>
+                    <li>Aide algo du Simon pour la sélection de couleur aléatoires</li>
+                </ul>
+
+                <span>Sanae :</span>
+                <ul>
+                    <li>Initiation du HTML et CSS par le groupe et donc phase d’apprentissage </li>
+                    <li>Choix du design général du site  </li>
+                </ul>
+
+                
+                
+            </section>
+
+
+            <a id="suivant" onclick="defilement()">Suivant</a>
+            <a id ="retour" class="none" onclick="retour()">Retour</a>
+            
+               
+            <section id="gameselection">
+                <a href="puissancefour.html">
+                <article id="puissancequatre" class="jeux" onmouseover="big('puissancequatre')" onmouseout="normal('puissancequatre')" >
+                    <figure class="titrejeu"><img src="p4.png" alt="Image puissance 4"></figure>
+                    <figure id="p4tab"><img src="tab.png" alt="Image puissance 4"></figure>
+                </article>
+                </a>
+
+                <a href="Mastermind.html">
+                    <article id="mastermind" class="jeux" onmouseover="big('mastermind')" onmouseout="normal('mastermind')">
+                        <figure class="titrejeu"><img src="mastermind.png" alt="Image mastermind"></figure>
+                        <figure id="mastermindlogo"><img src="mastermindgame.png" alt="Image mastermind"></figure>
+                    </article>
+                </a>
+
+                <a href="Simon_game.html">
+                <article id="simon" class="jeux" onmouseover="big('simon')" onmouseout="normal('simon')">
+                    <figure class="titrejeu"><img src="simon.png" alt="Image simon"></figure>
+                    <figure id="simonlogo"><img src="simongamelogo.png" alt="Image simon"></figure>
+                </article>
+                </a>
+
+                
+
+                <a href="justeprix.html">
+                <article id="jprix" class="jeux" onmouseover="big('jprix')" onmouseout="normal('jprix')">
+                    <figure class="titrejeu"><img src="Jprix.png" alt="Image du juste prix"></figure>
+                    <figure id="justeprixlogo"><img src="justeprix.jpg" alt="Image du juste prix"></figure>
+                </article>
+                </a>
+
+
+
+            </section>
+        </main>
+        
+    </body>
+    
+</html>

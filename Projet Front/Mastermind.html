@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mastermind</title>
+    <link rel="stylesheet" type="text/css" href="Mastermind.css">
+    <script type="text/javascript" src="mastermind.js"></script>
+    <script>
+        for(let i = 0; i < 4; i++){
+            temp = Math.floor(Math.random()* 4) 
+            aDeviner[i] = preDef[temp]; 
+        }        
+    </script>
+    
+</head>
+
+
+
+<body>
+    <header>
+        <div id="sonic"><img src="tenor.gif" alt="deco"></div>
+        
+        <figure><a href="index.html"><img src="logohome.png" alt="logo home"></a></figure>
+        <h1>Chill Party</h1>
+    </header>
+
+
+    <h2>Jeu du Mastermind !!</h2>
+    <h3>Règles du jeu :</h3>
+    <p>Les règles du jeu sont simples : L'ordinateur va créer une grille de couleurs dans un certain ordre, et vous devrez réussir à placer les bonnes couleurs dans le bon ordre avec un maximum de 12 essais.</p>
+    <section id="total">
+        <section id="tableau">
+            
+            <div id="ligne">
+            <div class="C"></div><div class="C"></div><div class="C"></div><div class="C"></div>
+            <div class="RD"></div>
+            </div>
+            <div id="ligne">
+            <div class="C"></div><div class="C"></div><div class="C"></div><div class="C"></div>
+            <div class="RD"></div>
+            </div>
+            <div id="ligne">
+            <div class="C"></div><div class="C"></div><div class="C"></div><div class="C"></div>
+            <div class="RD"></div>
+            </div>
+            <div id="ligne">
+            <div class="C"></div><div class="C"></div><div class="C"></div><div class="C"></div>
+            <div class="RD"></div>
+            </div>
+            <div id="ligne">
+            <div class="C"></div><div class="C"></div><div class="C"></div><div class="C"></div>
+            <div class="RD"></div>
+            </div>
+            <div id="ligne">
+            <div class="C"></div><div class="C"></div><div class="C"></div><div class="C"></div>
+            <div class="RD"></div>
+            </div>
+            <div id="ligne">
+            <div class="C"></div><div class="C"></div><div class="C"></div><div class="C"></div>
+            <div class="RD"></div>
+            </div>
+            <div id="ligne">
+            <div class="C"></div><div class="C"></div><div class="C"></div><div class="C"></div>
+            <div class="RD"></div>
+            </div>
+            <div id="ligne">
+            <div class="C"></div><div class="C"></div><div class="C"></div><div class="C"></div>
+            <div class="RD"></div>
+            </div>
+            <div id="ligne">
+            <div class="C"></div><div class="C"></div><div class="C"></div><div class="C"></div>
+            <div class="RD"></div>
+            </div>
+            <div id="ligne">
+            <div class="C"></div><div class="C"></div><div class="C"></div><div class="C"></div>
+            <div class="RD"></div>
+            </div>
+            <div id="ligne">
+            <div class="C"></div><div class="C"></div><div class="C"></div><div class="C"></div>
+            <div class="RD"></div>
+            </div>
+
+        </section>
+    
+
+        <section id="select_couleur">
+            
+            <form name="Choix_couleur1">
+                <!--<section id="case1">-->
+                    <label for="case1">Case  1 : </label>
+                    <select name="case1">
+                        <option value="blue">blue</option>
+                        <option value="red">red</option>
+                        <option value="green">green</option>
+                        <option value="yellow">yellow</option>
+                    </select>
+                    <input type="button" name="Envoyer les données" value="ok" onClick="couleur_case1(Choix_couleur1)">
+            </form>
+
+                <!--</section>-->
+            <form name="Choix_couleur2">
+                <!--<section id="case2">-->
+                    <label for="case2">Case 2 : </label>
+                    <select name="case2">
+                        <option value="blue">blue</option>
+                        <option value="red">red</option>
+                        <option value="green">green</option>
+                        <option value="yellow">yellow</option>
+                    </select>
+                    <input type="button" name="Envoyer les données" value="ok" onClick="couleur_case2(Choix_couleur2)">
+                <!--</section>-->
+            </form>
+
+            <form name="Choix_couleur3">
+                <!--<section id="case3">-->
+                    <label for="case3">Case 3 : </label>
+                    <select name="case3">
+                        <option value="blue">blue</option>
+                        <option value="red">red</option>
+                        <option value="green">green</option>
+                        <option value="yellow">yellow</option>
+                    </select>
+                    <input type="button" name="Envoyer les données" value="ok" onClick="couleur_case3(Choix_couleur3)">
+                <!--</section>-->
+            </form>
+            <form name="Choix_couleur4">
+                <!--<section id="case4">-->
+                    <label for="case4">Case 4 : </label>
+                    <select name="case4">
+                        <option value="blue">blue</option>
+                        <option value="red">red</option>
+                        <option value="green">green</option>
+                        <option name ="yellow" value="yellow">yellow</option>
+                    </select>
+                    <input type="button" name="Envoyer les données" value="ok" onClick="couleur_case4(Choix_couleur4)">
+                <!--</section>--> 
+            </form>
+            <input type="submit" name="okay" value="Valider ligne" onclick="remplissage_ligne()">
+        </section>
+    </section>
+
+
+
+</body>
+
+</html>

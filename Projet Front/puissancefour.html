@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="normalise.css">
+    <link rel="stylesheet" href="puissancefour.css">
+    <script type="text/javascript" src="puissancefour.js"></script>
+    <link rel="icon" type="image/x-icon" href="RETROWAVE.png"/>
+    <title>Grid puissancefour</title>
+</head>
+<body">
+    <header>
+        <div id="sonic"><img src="tenor.gif" alt="deco"></div>
+        
+        <figure><a href="index.html"><img src="logohome.png" alt="logo home"></a></figure>
+        <h1>Chill Party</h1>
+    </header>
+
+    <script>
+    
+        tableau=[
+            ["white","white","white","white","white","white","white"],
+            ["white","white","white","white","white","white","white"],
+            ["white","white","white","white","white","white","white"],
+            ["white","white","white","white","white","white","white"],
+            ["white","white","white","white","white","white","white"],
+            ["white","white","white","white","white","white","white"]
+        ];
+        turn=0;
+        jeuencour=true;
+    </script>
+    <section id="game">
+        <section id="turntxt">
+            <span id="Jred"> <span class="rouge">J1</span> c'est à ton tour</span>
+            <span id="Jyellow" class="caché"> <span class="jaune">J2</span> c'est à ton tour</span>
+            <span id="Wred" class="caché">C'est la victoire de <span class="rouge">J1</span> </span>
+            <span id="Wyellow" class="caché"> C'est la victoire de <span class="jaune">J2</span></span>
+        </section>
+
+    
+        <div class="tab">
+            <div class="columnun">
+                <div id="columnuncase1" onclick="myFunction(turn,'columnuncase',1)" class ="un"></div>
+                <div id="columnuncase2" onclick="myFunction(turn,'columnuncase',1)" class="deux"></div>
+                <div id="columnuncase3" onclick="myFunction(turn,'columnuncase',1)" class="trois"></div>
+                <div id="columnuncase4" onclick="myFunction(turn,'columnuncase',1)" class="quatre"></div>
+                <div id="columnuncase5" onclick="myFunction(turn,'columnuncase',1)" class="cinq"></div>
+                <div id="columnuncase6" onclick="myFunction(turn,'columnuncase',1)" class="six"></div>
+            </div>
+
+            <div class="columndeux">
+                <div id="columndeuxcase1" onclick="myFunction(turn,'columndeuxcase',2)" class ="un"></div>
+                <div id="columndeuxcase2" onclick="myFunction(turn,'columndeuxcase',2)" class="deux"></div>
+                <div id="columndeuxcase3" onclick="myFunction(turn,'columndeuxcase',2)" class="trois"></div>
+                <div id="columndeuxcase4" onclick="myFunction(turn,'columndeuxcase',2)" class="quatre"></div>
+                <div id="columndeuxcase5" onclick="myFunction(turn,'columndeuxcase',2)" class="cinq"></div>
+                <div id="columndeuxcase6" onclick="myFunction(turn,'columndeuxcase',2)" class="six"></div>
+            </div>
+
+            <div class="columntrois">
+                <div id="columntroiscase1" onclick="myFunction(turn,'columntroiscase',3)" class ="un"></div>
+                <div id="columntroiscase2" onclick="myFunction(turn,'columntroiscase',3)" class="deux"></div>
+                <div id="columntroiscase3" onclick="myFunction(turn,'columntroiscase',3)" class="trois"></div>
+                <div id="columntroiscase4" onclick="myFunction(turn,'columntroiscase',3)" class="quatre"></div>
+                <div id="columntroiscase5" onclick="myFunction(turn,'columntroiscase',3)" class="cinq"></div>
+                <div id="columntroiscase6" onclick="myFunction(turn,'columntroiscase',3)" class="six"></div>
+            </div>
+
+            <div class="columnquatre">
+                <div id="columnquatrecase1" onclick="myFunction(turn,'columnquatrecase',4)" class ="un"></div>
+                <div id="columnquatrecase2" onclick="myFunction(turn,'columnquatrecase',4)" class="deux"></div>
+                <div id="columnquatrecase3" onclick="myFunction(turn,'columnquatrecase',4)" class="trois"></div>
+                <div id="columnquatrecase4" onclick="myFunction(turn,'columnquatrecase',4)" class="quatre"></div>
+                <div id="columnquatrecase5" onclick="myFunction(turn,'columnquatrecase',4)" class="cinq"></div>
+                <div id="columnquatrecase6" onclick="myFunction(turn,'columnquatrecase',4)" class="six"></div>
+            </div>
+
+            <div class="columncinq">
+                <div id="columncinqcase1" onclick="myFunction(turn,'columncinqcase',5)" class ="un"></div>
+                <div id="columncinqcase2" onclick="myFunction(turn,'columncinqcase',5)" class="deux"></div>
+                <div id="columncinqcase3" onclick="myFunction(turn,'columncinqcase',5)" class="trois"></div>
+                <div id="columncinqcase4" onclick="myFunction(turn,'columncinqcase',5)" class="quatre"></div>
+                <div id="columncinqcase5" onclick="myFunction(turn,'columncinqcase',5)" class="cinq"></div>
+                <div id="columncinqcase6" onclick="myFunction(turn,'columncinqcase',5)" class="six"></div>
+            </div>
+
+            <div class="columnsix">
+                <div id="columnsixcase1" onclick="myFunction(turn,'columnsixcase',6)" class ="un"></div>
+                <div id="columnsixcase2" onclick="myFunction(turn,'columnsixcase',6)" class="deux"></div>
+                <div id="columnsixcase3" onclick="myFunction(turn,'columnsixcase',6)" class="trois"></div>
+                <div id="columnsixcase4" onclick="myFunction(turn,'columnsixcase',6)" class="quatre"></div>
+                <div id="columnsixcase5" onclick="myFunction(turn,'columnsixcase',6)" class="cinq"></div>
+                <div id="columnsixcase6" onclick="myFunction(turn,'columnsixcase',6)" class="six"></div>
+            </div>
+
+            <div class="columnsept">
+                <div id="columnseptcase1" onclick="myFunction(turn,'columnseptcase',7)" class ="un"></div>
+                <div id="columnseptcase2" onclick="myFunction(turn,'columnseptcase',7)" class="deux"></div>
+                <div id="columnseptcase3" onclick="myFunction(turn,'columnseptcase',7)" class="trois"></div>
+                <div id="columnseptcase4" onclick="myFunction(turn,'columnseptcase',7)" class="quatre"></div>
+                <div id="columnseptcase5" onclick="myFunction(turn,'columnseptcase',7)" class="cinq"></div>
+                <div id="columnseptcase6" onclick="myFunction(turn,'columnseptcase',7)" class="six"></div>
+            </div>
+        </div>
+
+        <section id="button">
+            <span id="b_reset" onclick="Reset()">Reset</span>
+            <span id="b_retour" onclick="Retour(xmemory,ymemory,idmemory,colormemory)">Retirer le dernier pion</span>
+        </section>
+
+    </section>
+
+    
+</body>
+</html>

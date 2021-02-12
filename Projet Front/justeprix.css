@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "RetroWave";
+    src: url('font.ttf');
+} 
+body{ 
+    font-family: "RetroWave",cursive;
+    /*background-color: #131519 ;*/
+    background-image: url(background.jpg);
+    word-spacing: 0.5em;
+    font-size: 0.95vw;
+    line-height: 1.5em;
+    color: white;
+    overflow-x: hidden;   
+}
+header>figure>a>img{
+    margin-top:0.3em ;
+    height: 3em;
+}
+header{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 1.2em;
+    border: 0.5px solid blue; 
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    background-color: #343a40; 
+}
+
+header>h1{
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0px;
+    margin: auto;  
+} 
+
+header>figure{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+#sonic> img{
+    width: 3.2em;
+    height: 3.2em;
+    position: absolute;
+    top: 0.7em;
+    left: 0em;
+    animation-name: mvt;
+    animation-duration: 6.5s;
+    animation-iteration-count:infinite;
+    
+}
+
+@keyframes mvt {
+    0%{
+
+        transform: translate(-5vw);
+        
+    }
+    100%{
+        transform: translate(120vw);
+        
+    }
+}
+#chrono{
+    position: relative;
+    top: 15vh;
+    left: 40vw;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border: 0.5px solid white;
+    border-radius: 1em;
+    background:linear-gradient(-45deg, rgb(10, 10, 141),rgb(145, 7, 133), rgb(10, 10, 141));
+    background-size: 200% 200%;
+    animation-name: result;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    height: 1.5em;
+    width: 9em;
+}
+#chrono > #time{
+    position: relative;
+    top: 0.5rem;
+}
+#règle > p{
+    position: relative;
+    margin: auto;
+    margin-top: 1em;
+    padding: 1em;
+    background:linear-gradient(rgb(10, 10, 141),rgb(145, 7, 133), rgb(10, 10, 141));
+    background-size: 1000% 1000%;
+    animation-name: fond;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border: 0.5px solid blue;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px 0px rgba(100, 86, 86, 0.5);
+    text-shadow:0.1em 0.1em 0.2em rgba(0,0,0,0.77);
+    text-align: center;
+    font-size: 1.2em;
+}
+@keyframes fond {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 0% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+#start{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10rem;
+    height: 4rem;
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: purple;
+    background-color: rgb(3, 3, 51);
+}
+#start:hover{
+    color: rgb(3, 3, 51);
+    background-color: purple;
+}
+#btn{
+    position: relative;
+    height: 2em;
+    width: 10em;
+    color: white;
+    background-color: rgb(13, 13, 173);
+    border-radius: 1em;
+    left: 3.5vw;
+    top: 4vh;
+}
+#btn:hover{
+    color: white;
+    background-color: rgb(87, 15, 155);
+}
+#reset{
+    position: relative;
+    left: 44vw;
+    top: 35vh;
+    height: 2em;
+    width: 10em;
+    color: white;
+    background-color: rgb(13, 13, 173);
+    border-radius: 1em;
+}
+#reset:hover{
+    color: white;
+    background-color: rgb(87, 15, 155);
+}
+#response{
+    position: relative;
+    left: 2.5vw;
+    top: 2vh;
+    height: 2em;
+    width: 12em;
+    text-align: center;
+    border-radius: 1em;
+    color: white;
+    background-color: rgb(53, 49, 49);
+}
+.result{
+    height: 1.5em;
+    width: 7em;
+    font-size: 2em;
+    position: relative;
+    top: -2vh;
+    left: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border: 0.5px solid white;
+    border-radius: 1em;
+    background:linear-gradient(-45deg, rgb(10, 10, 141),rgb(145, 7, 133), rgb(10, 10, 141));
+    background-size: 200% 200%;
+    animation-name: result;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-align: center;   
+    
+}
+
+.result > span {
+    position: relative;
+    top: .5rem;
+
+}
+@keyframes result{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.caché{
+    display: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 23vh;
+    left: 40vw;
+}

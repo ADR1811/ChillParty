@@ -1,0 +1,214 @@
+
+@font-face {
+    font-family: "RetroWave";
+    src: url('font.ttf');
+}
+body { 
+    font-family: "RetroWave",cursive;
+    /*background-color: #131519 ;*/
+    background-image: url(background.jpg);
+    word-spacing: 0.5em;
+    font-size: 0.95vw;
+    line-height: 1.5em;
+    color: white;
+    overflow-x: hidden;
+    
+}
+header > figure > a > img {
+    margin-top:0.3em ;
+    height: 3em;
+}
+header {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 1.2em;
+    border: 0.5px solid blue; 
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    background-color: #343a40;   
+}
+header > h1 {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0px;
+    margin: auto;
+} 
+header > figure {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+#sonic > img {
+    width: 3.2em;
+    height: 3.2em;
+    position: absolute;
+    top: 0.7em;
+    left: 0em;
+    animation-name: mvt;
+    animation-duration: 6.5s;
+    animation-iteration-count:infinite;
+}
+@keyframes mvt {
+    0%{
+        transform: translate(-5vw);
+    }
+    100%{
+        transform: translate(120vw);
+    }
+}
+
+/* Titres */
+h2 {
+    text-decoration: underline;
+    position: relative;
+    top: 1vh;
+    left: 40vw;
+    font-size: 3em;
+}
+h3 {
+    text-align: center;
+    font-size: 4em;
+}
+span {
+    text-align: center;
+}
+
+/*  Boutons */
+.bloc {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    width: 10em;
+    position: relative;
+    margin: auto;
+}
+#yellow {
+    border: 3px solid black;
+    border-radius: 30px 5px 30px 40px;
+    background-color: yellow;
+    box-shadow: 0 0 20px yellow;
+    width: 100px;
+    height: 100px;
+    grid-column: 1;
+    grid-row: 2;
+    animation: yellow;
+    animation-duration: 700ms;
+}
+#green {
+    border: 3px solid black;
+    border-radius: 40px 30px 5px 30px;
+    background-color: green;
+    box-shadow: 0 0 20px green;
+    opacity: O.4;
+    width: 100px;
+    height: 100px;
+    grid-column: 1;
+    grid-row: 1;
+    animation: green;
+    animation-duration: 700ms;
+}
+#blue {
+    border: 3px solid black;
+    border-radius: 5px 30px 40px 30px;
+    background-color: blue;
+    box-shadow: 0 0 20px blue;
+    opacity: O.4;
+    width: 100px;
+    height: 100px;
+    grid-column: 2;
+    grid-row: 2;
+    animation: blue;
+    animation-duration: 700ms;
+}
+#red {
+    border: 3px solid black;
+    border-radius: 30px 40px 30px 5px;
+    background-color: red;
+    box-shadow: 0 0 20px red;
+    opacity: O.4;
+    width: 100px;
+    height: 100px;
+    grid-column: 2;
+    grid-row: 1;
+    animation: red;
+    animation-duration: 700ms;
+}
+.cache {
+    display: none;
+}
+#text {
+    position: absolute;
+    margin-left: 25em;
+    margin-top: 4em;
+    font-size: 24px;
+    font-family: "RetroWave";
+}
+.explications {
+    margin-left: 15em;
+}
+.intro {
+    position: absolute;
+    top: 60vh;
+    left: 38vw;
+}
+#info, #start {
+    border: 2px solid black;
+    box-shadow: 0 10px 20px 0 black;
+    width: 200px;
+    background-color: white;
+    color: white;
+    text-shadow: 0 2px 10px black;
+    font-family: "RetroWave";
+    src: url('font.ttf');
+}
+#lose {
+    margin-right: 3em;
+    margin-top: 1.5em;
+    text-shadow: 0 0 10px black; 
+}
+
+/* Animations */
+#yellow:hover {
+    background-color: lightyellow;
+}
+#green:hover {
+    background-color: lightgreen;
+}
+#blue:hover {
+    background-color: lightblue;
+}
+#red:hover {
+    background-color: lightsalmon;
+}
+#info:hover, #start:hover {
+    height: 30px;
+    border: 3px solid white;
+}
+
+#yellow:active {
+    background-color: lightyellow;
+}
+#green:active {
+    background-color: lightgreen;
+}
+#blue:active {
+    background-color: lightblue;
+}
+#red:active {
+    background-color: lightsalmon;
+}
+
+.clignotementred {
+    background-color:lightsalmon;
+}
+.clignotementyellow {
+    background-color:lightyellow;
+}
+.clignotementblue {
+    background-color:lightblue;
+}
+.clignotementgreen {
+    background-color:lightgreen;
+}

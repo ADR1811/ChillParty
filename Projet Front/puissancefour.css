@@ -1,0 +1,284 @@
+@font-face {
+    font-family: "RetroWave";
+    src: url('font.ttf');
+}
+body{ 
+    font-family: "RetroWave",cursive;
+    /*background-color: #131519 ;*/
+    background-image: url(background.jpg);
+    word-spacing: 0.5em;
+    font-size: 0.95vw;
+    line-height: 1.5em;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+header>figure>a>img{
+    margin-top:0.3em ;
+    height: 3em;
+}
+
+header{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 1.2em;
+    border: 0.5px solid blue; 
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    background-color: #343a40;   
+}
+
+header>h1{
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0px;
+    margin: auto;
+} 
+
+header>figure{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+
+
+#sonic> img{
+    width: 3.2em;
+    height: 3.2em;
+    position: absolute;
+    top: 0.7em;
+    left: 0em;
+    animation-name: mvt;
+    animation-duration: 6.5s;
+    animation-iteration-count:infinite;
+    
+}
+
+@keyframes mvt {
+    0%{
+
+        transform: translate(-5vw);
+        
+    }
+    100%{
+        transform: translate(120vw);
+        
+    }
+}
+
+#game{
+    position: relative;
+    border-radius: 5px;
+    width: 50vw;
+    height: 70vh;
+    top: 15vh;
+    margin: auto;
+    background-color: #343a40;
+    border: 3px solid blue;
+}
+.tab{
+    background-color: blue;
+    display: grid;
+    width: 30em;
+    height: 25em;
+    grid-template-columns: repeat(7,1fr);
+    border-radius: 3%;
+    position: relative;
+    margin: auto;
+    top: 10.5vh;
+       
+}
+.columnun{
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+}
+
+.columndeux{
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+}
+
+.columntrois{
+    grid-column: 3;
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+}
+.columnquatre{
+    grid-column: 4;
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+}
+.columncinq{
+    grid-column: 5;
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+}
+.columnsix{
+    grid-column: 6;
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+}
+
+.columnsept{
+    grid-column: 7;
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+}
+.un{
+    grid-row: 1;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.deux{
+    grid-row: 2;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.trois{
+    grid-row: 3;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.quatre{
+    grid-row: 4;
+    background-color: white;
+    border-radius: 100%;
+}
+.cinq{
+    grid-row: 5;
+    background-color: white;
+    border-radius: 100%;
+}
+.six{
+    grid-row: 6;
+    background-color: white;
+    border-radius: 100%;
+}
+.sept{
+    grid-row: 7;
+    background-color: white;
+    border-radius: 100%;
+}
+
+#Jred{
+    font-size: 2em;
+    position: relative;
+    margin: auto;
+    top: 5vh;
+    left: 13vw;
+ 
+}
+#Jyellow{
+    font-size: 2em;
+    position: relative;
+    margin: auto;
+    top: 5vh;
+    left: 13vw;
+}
+#Wred{
+    font-size: 2em;
+    position: relative;
+    margin: auto;
+    top: 5vh;
+    left: 13vw;
+ 
+}
+#Wyellow{
+    font-size: 2em;
+    position: relative;
+    margin: auto;
+    top: 5vh;
+    left: 13vw;
+}
+
+
+
+
+.caché{
+    display: none;
+}
+
+.rouge{
+    color: red;
+}
+.jaune{
+    color:yellow;
+}
+
+#b_retour{
+
+    
+    position: relative;
+    right: 2vw;
+    
+    
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 3px solid blue;
+    border-radius: 5px;
+    box-shadow:  0px 3px 5px rgba(0,0,0,0.77);
+    background-color: blue;
+    color:white;
+    text-shadow:0.1em 0.1em 0.2em rgba(0,0,0,0.77);   
+    font-weight: bold; 
+    overflow: visible;
+}
+#b_reset{
+
+    position: relative;
+    right: 7vw;
+
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 3px solid blue;
+    border-radius: 5px;
+    box-shadow:  0px 3px 5px rgba(0,0,0,0.77);
+    background-color: blue;
+    color:white;
+    text-shadow:0.1em 0.1em 0.2em rgba(0,0,0,0.77);   
+    font-weight: bold; 
+    overflow: visible;
+
+}
+
+#b_reset:hover{
+
+    background-color: rgb(55, 21, 207);
+    cursor:  pointer;
+
+}
+#b_retour:hover{
+    background-color:rgb(55, 21, 207);
+    cursor:  pointer;
+}
+
+
+#b_reset:active{
+    box-shadow: inset 0px 3px 5px rgba(0,0,0,0.77);
+
+}
+#b_retour:active{
+    box-shadow: inset 0px 3px 5px rgba(0,0,0,0.77);
+}
+
+
+#button{
+    position: relative;
+    bottom: -17vh;
+    left: 18vw;
+}

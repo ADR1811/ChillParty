@@ -1,0 +1,72 @@
+@font-face {
+	font-family: "RetroWave";
+	src: url('font.ttf');
+}
+body{ 
+    font-family: "RetroWave",cursive;
+    /*background-color: #131519 ;*/
+    background-image: url(background.jpg);
+    word-spacing: 0.5em;
+    font-size: 0.95vw;
+    line-height: 1.5em;
+    color: white;
+    overflow-x: hidden;
+    
+}
+
+header>figure>a>img{
+    margin-top:0.3em ;
+    height: 3em;
+}
+
+header{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 1.2em;
+    border: 0.5px solid blue; 
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    background-color: #343a40;   
+}
+
+header>h1{
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0px;
+    margin: auto;
+} 
+
+header>figure{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+
+
+#sonic> img{
+    width: 3.2em;
+    height: 3.2em;
+    position: absolute;
+    top: 0.7em;
+    left: 0em;
+    animation-name: mvt;
+    animation-duration: 6.5s;
+    animation-iteration-count:infinite;
+    
+}
+
+@keyframes mvt {
+    0%{
+
+        transform: translate(-5vw);
+        
+    }
+    100%{
+        transform: translate(120vw);
+        
+    }
+}
